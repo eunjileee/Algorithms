@@ -1,7 +1,7 @@
 /** 
 - Author: eunjileee@GitHub (leeeeunz@gmail.com)
-- Date : 2020-03-31
-- URL : https://www.acmicpc.net/problem/10951
+- Date : 2020-04-02
+- URL : https://www.acmicpc.net/problem/11021
 */
 
 const readline = require("readline");
@@ -17,29 +17,35 @@ rl.on("line", function(line) {
   input.push(line);
   /*
   예시)
-  < 입력 >       < 입력을 받은 line 배열 >
+  < 입력 > 
+    5                  < 입력을 받은 line 배열 >
     1 1
-    2 3      [ [ '1 1' ], [ '2 3' ], [ '3 4' ] [ '4 5'] ]
+    2 3      [ 5, [ '1 1' ], [ '2 3' ], [ '3 4' ], [ '9 8' ], [ '5 2' ] ]
     3 4
-    4 5
+    9 8
+    5 2
   */
 }).on("close", function() {
+  let count = Number(input[0]); // 테스트 케이스 개수
   let num = [];
-  for (let i = 0; i < input.length; i++) {
+
+  for (let i = 1; i <= count; i++) {
     num.push(input[i].split(" "));
   }
 
   /*
     <num의 배열>
-    [ ['1', '1'], ['2', '3'], ['3', '4'], ['4', '5'] ]
-    */
+
+    [ ['1', '1'], ['2', '3'], ['3', '4'], ['9', '8'], ['5', '2'] ]
+
+  */
 
   /* 배열 안 요소를 인덱스로 접근하여 합한다.*/
-  for (let i = 0; i < input.length; i++) {
+  for (let i = 0; i < count; i++) {
     num1 = Number(num[i][0]);
     num2 = Number(num[i][1]);
 
-    console.log(num1 + num2);
+    console.log(`Case #${i + 1}: ${num1 + num2}`);
   }
 
   process.exit();
