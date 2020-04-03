@@ -1,7 +1,7 @@
 /** 
 - Author: eunjileee@GitHub (leeeeunz@gmail.com)
 - Date : 2020-04-03
-- URL : https://www.acmicpc.net/problem/11718
+- URL : https://www.acmicpc.net/problem/11719
 */
 
 const readline = require("readline");
@@ -18,9 +18,10 @@ rl.on("line", function(line) {
 
   /*
 
-  Hello                 <input>
-  Baekjoon              [ 'Hello', ['Baekjoon'], ['Online Judge'] ]
-  Online Judge
+      Hello                                      <input>
+                    
+   Baekjoon                 [ '    Hello', [' '], ['Baekjoon'], ['   Online Judge    '] ]
+      Online Judge                 
 
   */
 }).on("close", function() {
