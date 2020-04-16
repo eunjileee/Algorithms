@@ -1,6 +1,6 @@
 /** 
 - Author: eunjileee@GitHub (leeeeunz@gmail.com)
-- Date : 2020-04-10
+- Date : 2020-04-16
 - URL : https://www.acmicpc.net/problem/1924
 */
 
