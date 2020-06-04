@@ -1,9 +1,14 @@
 /** 
 - Title : Valid Parentheses
 - Author: eunjileee@GitHub (leeeeunz@gmail.com)
-- Date : 2020-05-26
+- Date : 2020-06-03
 - URL : https://leetcode.com/problems/valid-parentheses/
 */
+
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
 
 let isValid = function (s) {
   if (s === null || s.length <= 0) return true;
